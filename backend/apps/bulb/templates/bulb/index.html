@@ -1,0 +1,42 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    {{title}}
+{% endblock  %}
+
+
+{% block bulb_content %}
+<!-- контейнер с лентой bulb // начало -->
+{% for i in news %}
+<div class="s-advantages-blocks-type-1__item-wrapper sb-m-6-bottom">
+    <div class="s-advantages-blocks-type-1__item">
+        <div class="s-advantages-blocks-type-1__divider-container sb-m-6-bottom">
+            <div class="s-advantages-blocks-type-1__divider-wrapper">
+                <div class="s-advantages-blocks-type-1__divider sb-element-wrapper-editor">
+                    <div class=" sb-background sb-background sb-background_clear" style="background: #e7e8ea;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sb-row s-advantages-blocks-type-1__row sb-m-clear-bottom">
+            <div class="sb-col_lg-6 sb-col_md-6 sb-col_sm-12 sb-col_xs-12 s-advantages-blocks-type-1__image-container sb-m-8-bottom">
+                <div class="sb-image-rectangle-small">
+                    <img class="sb-image-crop sb-image-crop_loaded lazy" src="{{i.img.url}}" alt="Изображение" style="transform: translateX(0%) translateY(0.10864197530864197%) rotateZ(0deg) scaleX(1) scaleY(1.5000015000015); -webkit-transform: translateX(0%) translateY(0.10864197530864197%) rotateZ(0deg) scaleX(1) scaleY(1.5000015000015)">
+                </div>
+            </div>
+            <div class="sb-col_lg-6 sb-col_md-6 sb-col_sm-12 sb-col_xs-12">
+                <div class="s-advantages-blocks-type-1__label-container sb-m-17-bottom">
+                    <div class="s-advantages-blocks-type-1__label-wrapper sb-text-dark">
+                        <div class=" sb-background sb-background sb-background_clear" style="background: linear-gradient(135deg, #fff68d, #70ec94);"></div>
+                        <div class="s-advantages-blocks-type-1__label sb-align-left sb-font-p4">{{i.tag}}<!--Bedu Studio--></div>
+                    </div>
+                </div>
+                <h5 class="s-advantages-blocks-type-1__title sb-align-left sb-font-h5 sb-font-title sb-m-21-bottom">{{i.news_title}}</h5>
+                <div class="sb-m-13-bottom sb-align-left sb-font-p3">{{i.news_description}}</div>
+                <a href="../bulb?post={{i.news_id}}" class="s-advantages-blocks-type-1__button sb-button-secondary sb-button-type_bordered" style="border-color: #303952">{{i.action_click}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<!-- контейнер с лентой bulb // конец -->
+{% endblock  %}

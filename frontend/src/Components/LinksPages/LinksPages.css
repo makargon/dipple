@@ -1,0 +1,13 @@
+.navLink{
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Golos Text', sans-serif;
+}
+.navLink:hover{
+  color: black;
+  cursor: pointer;
+}
+.active{
+    color: black;
+    text-decoration: underline;
+}

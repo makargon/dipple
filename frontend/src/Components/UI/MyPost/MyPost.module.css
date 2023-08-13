@@ -1,0 +1,43 @@
+.posts{
+   width: 100%;
+  position: relative;
+  margin-top: 15px;
+}
+.postImage{
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  max-width: 100%;
+  padding: auto;
+}
+.textFormatPost{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 23px;
+  font-family: 'Golos Text', sans-serif;
+  color: white;
+  margin-left: 8px;
+  margin-bottom: 15px;
+}
+.publishDatePost{
+    font-size: 14px;
+    font-family: 'Golos Text', sans-serif;
+}
+.titlePost{
+    font-weight: 600;
+    font-family: 'Golos Text', sans-serif;
+}
+.descriptionPost{
+  font-size: 18px;
+  font-family: 'Golos Text', sans-serif;
+}
+.ratingPost{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  text-align: end;
+  top: 4px;
+  right: 8px;
+  font-family: 'Golos Text', sans-serif;
+}

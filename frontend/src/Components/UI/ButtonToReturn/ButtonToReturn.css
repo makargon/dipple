@@ -1,0 +1,31 @@
+.btnShow {
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  bottom: 50px;
+  right: 15px;
+  border: 4px blueviolet solid;
+  color: blueviolet;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  transition: opacity 1s ease-in-out;
+  opacity: 100%;
+  }
+  
+.btnShow:hover {
+    background-color: blueviolet;
+    color: black;
+    border: 4px black solid;
+}
+
+ .btnHide {
+      display: none;
+      opacity: 0;
+  }

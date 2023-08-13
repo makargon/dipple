@@ -1,0 +1,109 @@
+.s-gallery-single-type-1 {
+    position: relative;
+    box-sizing: border-box
+}
+
+@media screen and (max-width:639px) {
+    .s-gallery-single-type-1 {
+        padding-top: 275px
+    }
+
+    .s-gallery-single-type-1_without-content {
+        min-height: 340px
+    }
+}
+
+@media (min-width:640px) and (max-width:959px) {
+    .s-gallery-single-type-1 {
+        padding: 160px 44px 0
+    }
+
+    .s-gallery-single-type-1_without-content {
+        min-height: 264px
+    }
+}
+
+@media (min-width:960px) and (max-width:1359px) {
+    .s-gallery-single-type-1 {
+        padding: 320px 68px 0
+    }
+
+    .s-gallery-single-type-1_without-content {
+        min-height: 416px
+    }
+}
+
+@media screen and (min-width:1360px) {
+    .s-gallery-single-type-1 {
+        padding: 380px 132px 0
+    }
+
+    .s-gallery-single-type-1_without-content {
+        min-height: 484px
+    }
+}
+
+.s-gallery-single-type-1__wrapper {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box
+}
+
+@media screen and (max-width:639px) {
+    .s-gallery-single-type-1__wrapper {
+        width: 100%;
+        padding: 16px
+    }
+}
+
+@media (min-width:640px) and (max-width:959px) {
+    .s-gallery-single-type-1__wrapper {
+        width: 100%;
+        padding: 36px
+    }
+}
+
+.s-gallery-single-type-1__content {
+    position: relative;
+    z-index: 2
+}
+
+@media (min-width:960px) and (max-width:1359px) {
+    .s-gallery-single-type-1__wrapper {
+        width: 700px;
+        padding: 36px;
+        text-align: left
+    }
+
+    .s-gallery-single-type-1__title+.s-gallery-single-type-1__text {
+        padding-left: 36px
+    }
+}
+
+@media screen and (min-width:1360px) {
+    .s-gallery-single-type-1__wrapper {
+        width: 720px;
+        padding: 40px;
+        text-align: left
+    }
+
+    .s-gallery-single-type-1__title+.s-gallery-single-type-1__text {
+        padding-left: 52px
+    }
+}
+
+@media screen and (min-width:960px) {
+    .s-gallery-single-type-1__content {
+        display: flex
+    }
+
+    .s-gallery-single-type-1__title {
+        min-width: 296px
+    }
+
+    .s-gallery-single-type-1__text {
+        flex-grow: 1;
+        min-width: 293px;
+        margin-top: 0 !important
+    }
+}

@@ -1,0 +1,26 @@
+ul{
+  list-style: none;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.headerNavbar{
+  display: flex;
+  justify-content: center;
+}
+.logoDipple{
+  width: 30px;
+}
+.dayOfTheWeek{
+  font-size: 20px;
+  color: black;
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 700;
+}

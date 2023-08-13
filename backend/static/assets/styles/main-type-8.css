@@ -1,0 +1,30 @@
+.s-main-type-8{
+	position:relative;
+	display:flex;
+	align-items:center;
+	min-height:100vh;
+	box-sizing:border-box;
+	overflow:hidden
+}
+.s-main-type-8:not(.s-main-type-8_with-scroll-icon){
+	padding:20px 0
+}
+@media screen and (max-height:599px){
+	.s-main-type-8_with-scroll-icon{
+		padding-top:20px;
+		padding-bottom:65px
+	}
+}
+@media screen and (min-height:600px){
+	.s-main-type-8_with-scroll-icon{
+		padding-top:40px;
+		padding-bottom:80px
+	}
+}
+.s-main-type-8 .sb-container{
+	padding-top:20px;
+	padding-bottom:20px
+}
+.s-main-type-8__title{
+	margin:0
+}
